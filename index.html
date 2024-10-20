@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+	<title>Nikolaus Suess</title>
+	<meta charset="utf-8">
+	<script>
+function decode(element, array){
+	var str = '';
+	for( var j = 0; j < array.length; j++ ){
+		for (var i = 0; i < array[j].length; i += 2) 
+			str += String.fromCharCode(parseInt(array[j].substr(i, 2), 16));
+	}
+	var a = document.createElement('a');
+	a.setAttribute('href','mailto:'+str);
+	a.innerHTML = str;
+	document.getElementById(element).appendChild(a);
+}
+	</script>
+
+	<style>
+body { 
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#content {
+	position: absolute;
+	top: 0;
+	left: 0;
+/*	z-index: 1;*/
+	opacity: 1;
+	position: relative;
+}
+
+#text {
+	filter: none;
+	opacity: 1;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 18pt;
+	max-width: 1000px;
+	margin:auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 10px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+img {
+    margin: 25px;
+}
+
+</style>
+</head>
+<body onload="">
+	<span id="code"></span>
+	<div id="content"><div id="text">
+		<h1>Nikolaus Suess.</h1>
+		<img src="small_uspace_suess.jpg" style="width: 300px; max-width: 100%; top: 0; float:right; right: 0; padding-right: 20px;">
+		<h2>Experience</h2>
+		<ul>
+            <li>
+				<small>2024 - now</small><br>
+				IT Technician in the Research Group Visualization and Data Analysis<br>
+				<small>at the University of Vienna</small>
+            </li>
+			<li>
+				<small>2022 - 2023</small><br>
+				Scientific project staff in the WHATIF project<br>
+				<small>at the University of Vienna</small>
+            </li>
+			<li>
+				<small>2020 - 2021</small><br>
+				Student Assistant/Project staff in the Research Group Communication Technologies<br>
+				<small>at the University of Vienna</small>
+			</li>
+			<li>
+				<small>2019 - 2023</small><br>
+				Tutor for Programming I and Programming II<br>
+				<small>at the University of Vienna</small>
+			</li>
+		</ul>
+		<small>Link: <a href="https://ufind.univie.ac.at/de/person.html?id=109904">u:find entry</a></small>
+		
+		<h2>Projects and publications</h2>
+		<p>From March 2020 to July 2021 I was working as a Student Assistant in the Research Group Communication Technologies at the University of Vienna. I was doing research with Stefan Schmid, Klaus-Tycho Förster, Mahmoud Parham and Thomas Fenz at computer networks, especially at Traffic Engineering in combination with IPv6 Segment Routing.</p>
+		<ul>
+			<li><b>Traffic engineering with joint link weight and segment optimization</b><br>
+			    Mahmoud Parham, Thomas Fenz, Nikolaus Süss, Klaus-Tycho Foerster, and Stefan Schmid. 17th ACM International Conference on emerging Networking EXperiments and Technologies (CoNEXT), Munich, Germany, December 2021. <a href="https://doi.org/10.1145/3485983.3494846" target="_blank">[DOI]</a><a href="https://whatif-tools.net/segment-routing/" target="_blank">[ARTIFACTS]</a>
+			</li>
+		</ul>
+		<p>Nanonet is a network testing framework, originally written by David Lebrun. It is based off Mininet and simulates network hosts and routers by creating virtual namespaces on a Linux host and routes between them. We have forked the Github project and added additional functionality. See <a href="https://github.com/nikolaussuess/nanonet/">GitHub</a> for more information.</p>
+		<p>In February 2022, I rejoined the <a href="https://whatif-tools.net/" target="_blank"><em>WHATIF</em> project</a>. I was glad to work with Stefan Schmid, Juan Vanerio, Morten Schou and Jiří Srba on MPLS networks and the simulation of MPLS network traffic (until December 2023).</p>
+		
+		<p>Starting in March 2024, I am working with Lorenz Kummer in the field of neural networks.</p>
+
+		<h2>Programming projects</h2>
+		My more recent (non-scientific) programming projects include:
+		<ul>
+			<li>
+				<b>Slurm dashboard</b><br>
+				a small web dashboard that displays information (such as cluster usage, job queue, ...) about a slurm cluster. It is written in PHP. See <a href="https://github.com/nikolaussuess/slurm-dashboard" target="_blank">GitHub</a>.
+			</li>
+			<li>
+				<b>WebsiteIndicator</b><br>
+				a lightweight bookmark management app with (linux) system tray integration, written in Python. See <a href="https://github.com/nikolaussuess/WebsiteIndicator" target="_blank">GitHub</a>.
+			</li>
+		</ul>
+		<p>More projects: <a href="https://github.com/nikolaussuess/" target="_blank">GitHub Profile</a></p>
+		
+		<p>My programming languages are:</p>
+		<ul style="column-count: 4;">
+			<li>C</li>
+			<li>C++</li>
+			<li>Fortran</li>
+			<li>Java</li>
+			<li>PHP</li>
+			<li>Python</li>
+			<li>... and some more ...</li>
+		</ul>
+
+		<h2>Education</h2>
+		<ul>
+			<li>University of Vienna, Computer Science (Scientific Computing)<br>Bachelor's degree in 2021.<br>Currently studying in the Master.</li>
+			<li>HTL St. Pölten, Department of Computer Science<br>graduation in 2018 with good success.</li>
+		</ul>
+
+		<h2>Contact</h2>
+		<ul>
+			<li>For questions concerning my projects, please write to <span id='contact2'><script>var arr = ['6e','69','6b','6f','6c','61','75','73','2e','73','75','65','73','73','40','75','6e','69','76','69','65','2e','61','63','2e','61','74'];decode('contact2',arr)</script><noscript>[Please see ufind entry linked above]</noscript></span>.</li>
+			<li>All other concerns: <span id='contact3'><script>var arr = ['77','65','62','40','73','75','65','73','73','2e','64','65','76'];decode('contact3',arr)</script><noscript>web at [this domain]</noscript></span>.</li>
+		</ul>
+		<p>Nikolaus Suess, 3430 Tulln an der Donau, Austria</p>
+	</div></div>
+</body>
+</html>
